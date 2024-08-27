@@ -1,18 +1,26 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOIT-JS-HW-10</title>
+    <title>GOIT-JS-HW-12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-     <nav>
-      <ul>
-        <li><a href="./1-timer.html">Timer</a></li>
-        <li><a href="./2-snackbar.html">Snackbar</a></li>
-      </ul>
-    </nav>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
+    <div class="gallery"></div>
+    <div class="btn-wrapper">
+      <button class="hidden load-more" type="button">Load More</button>
+    </div>
+    <div class="loader-container hidden"><div class="loader"></div></div>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
